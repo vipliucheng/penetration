@@ -1,0 +1,181 @@
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+  	border-radius: 4px;
+    height: 38px;
+    line-height: 26px;
+    background: #52a6f4;
+    color: #fff;
+}
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*******layer style*********/
+.layer{ 
+	background: rgba(0,0,0,0.5);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index:10;
+	background-image:url("../layerBac.png");/*//没有该图,ie8下,弹出层底层输入框可输入值*/
+    background-repeat: repeat;
+}
+.layer .layer-wrpper{ 
+	width: 470px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10%;
+	background: #fff;
+	position: relative;
+	min-height: 400px;
+}
+.layer .layer-wrpper .layer-content{ 
+	padding: 15px;
+	font-size:14px
+}
+.layer .confirm-wrpper{
+	width:300px;
+	min-height:150px;
+	margin-top:15%;
+}
+.layer .confirm-btn{
+	margin-right:20px;
+}
+.layer .layer-close{ 
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+
+}
+.layer .layer-close .icon{ 
+	display: block;
+	font-size: 18px;
+}
+.layer .btn.link{
+	background:#1d70c5;
+	margin:10px auto;
+	color:#fff;
+	width:80px;
+	display:block;
+}
+
+.layer .layer-action{ 
+	text-align:center;
+	padding: 10px;
+	border-top:1px solid  #ddd;
+}
+.layer .layer-head{
+	padding: 8px 10px ;
+    background: #515151;
+    color: #fff;
+}
+
+.hide{
+	display:none;
+}
+.cont{
+	height: 1000px;
+	width: 100%;
+}
+.query-cont-box{
+	min-height: 260px;
+    max-height: 260px;
+    overflow: auto;
+	border:1px solid #bcbcbc;
+    margin: 5px 0 10px 0;
+}
+.query-cont{
+    margin: 5px 0 10px 0;
+    padding:0
+}
+.query-box{
+	width: 100%;
+}
+.query-box input{
+	float:left;
+	height:34px;
+	padding:8px 5px;
+	outline: none;
+	width: 100%;
+	font-size:14px;
+	padding-left:30px;
+	color:#202020;
+}
+.query-icon-text{
+	width: 75%;
+}
+.query-icon-text .query-icon-small{
+    left: 17px;
+}
+#queryBtn.btn{
+	float:left;
+	border-radius:0;
+	outline: none;
+    width: 25%;
+    font-size: 14px;
+}
+.query-close{
+	text-align: center;
+}
+.query-cont .every-layor{
+	padding: 8px 50px 8px 10px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height: 13px;
+    position: relative;
+    font-size:12px;
+    cursor: pointer;
+}
+.query-cont .every-layor span{
+	color: #616161;
+}
+.query-cont p{
+	margin-bottom: 5px;
+	color: #202020;
+}
+.hot-box{
+	font-size: 13px;
+    margin: 10px 0 8px 0;
+    border-bottom: 1px solid #bcbcbc;
+    padding-bottom: 7px;
+}
+.hot-box span{
+	margin-right: 5px;
+   	text-decoration: underline;
+   	color:#499cd6;
+   	cursor: pointer;
+}
+.quote-btn-box{
+    margin: 15px;
+}
+.quote-btn-box .btn{
+	float: right;
+	width: 115px;
+}
+#queryModel .layer-wrpper{
+	margin-top: 7%;
+}

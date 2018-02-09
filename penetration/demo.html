@@ -1,0 +1,61 @@
+<!--
+	1、解决pc端滚动穿透问题(兼容ie，火狐，谷歌)；
+	2、解决ie8弹出层底部可以响应点击输入等等功能问题（弹出层加背景图）
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<link href="css/index.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div >
+			<input type="button" value="弹出" id="modelAllName"/>
+			<div class="test">
+				<label>输入</label>
+				<input type="text" />
+			</div>
+			<div class="cont">
+				内容区域
+			</div>
+			<!-- 车型选择框 -->
+			<div class="layer" id="queryModel">
+				<div class="layer-wrpper">
+					<div class="layer-content">
+						<div class="query-box clearfix">
+							<div class="pull-left query-icon-text">
+								<input type="text" id="queryText" class=""/>
+								<i class="query-icon-small"></i>
+							</div>
+							<button id="queryBtn" class="btn btn-primary">搜索</button>
+						</div>
+						<div class="hot-box clearfix">
+							热门标签：
+							<span>大众</span>
+							<span>本田</span>
+							<span>奥迪</span>
+							<span>丰田</span>
+							<span>宝马</span>
+							<span>奔驰</span>
+							<span>福特</span>
+							<span>现代</span>
+							<span>别克</span>
+						</div>
+						<div class="query-cont-box" id="queryContBox">
+							<ul class="query-cont" id="queryCont">
+								
+							</ul>
+						</div>
+						
+						<div class="query-close">
+							<button id="queryclose" class="btn btn-primary">关闭</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/demo.js"></script>
+	</body>
+</html>
